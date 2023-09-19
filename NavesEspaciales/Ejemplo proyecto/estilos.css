@@ -8,23 +8,6 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 
-
-
-.boton {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.boton:hover {
-    background-color: #0056b3;
-}
-
 .contenedor{
     width: 90%;
     max-width: 1000px; /*ancho máximo de la página*/
@@ -96,9 +79,9 @@ body{
 }
 
 .contenedor .pie{
-    background:slategray ;
-    color: #fff;
-    grid-area: pie; 
+     background:slategray ;
+   color: #fff;
+  grid-area: pie; 
 }
 
 @media screen and (max-width: 768px){
@@ -121,3 +104,16 @@ body{
                              "pie pie pie";
     }
 }
+
+.subraya {
+    text-decoration: underline;
+    text-decoration-color: red; /* Cambia el color del subrayado */
+    text-decoration-thickness: 2px; /* Cambia el grosor del subrayado */
+  }
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,7 @@
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margen: 20px auto;
+    display: grid;
+    gap: 20px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagenes/icono.ico" type="imagen/X-icon">
+    <title>Arma Tu Viaje🚀!</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <h2>Arma Tu Viaje🚀!</h2>
+            <nav>
+                <a href="index.html">Inicio |</a>
+                <a href="Tecnologianaves.html">Tecnologia Y Naves |</a>
+                <a href="Quiz.html">Quiz |</a>
+                <a href="contacto.html">Contacto |</a>
+                <a href="ArmaTuViaje.html">Arma tu viaje estelar🚀! |</a>
+            </nav>
+        </header>
+    </div>
+    <!--Aca es la seccion de la galeria slider-->
+
+
+     <!--Aca empieza el contenido de la pagina-->
+    <main class="contenido"
+    background="http://www.pptbackgrounds.net/uploads/the-starry-sky-backgrounds-wallpapers.jpg">
+    <h1>Conoce nuestros servicios</h1>
+    <p>
+        
+    <b>Tipos de Camarotes Espacial:</b>
+    <br><br>
+    <b>Camarotes con Ventanas Panorámicas: </b>Camarotes espaciosos con grandes ventanas que ofrecen vistas
+    espectaculares de la Vía Láctea.
+    <br><br>
+    <b>Camarotes Temáticos Planetarios:</b> Camarotes diseñados en torno a planetas o lunas específicas, con
+    decoración temática y vistas virtuales del destino.
+    <br><br>
+    <b>Camarotes de Observación Estelar:</b> Camarotes especialmente diseñados con techos retractables que
+    permiten la observación directa de las estrellas y las galaxias.
+    <br><br>
+    <b> Camarotes Familiares Espaciales: </b>Espacios más grandes diseñados para acomodar familias o grupos
+    de viajeros.
+    <br><br>
+    <b>Suites de Lujo Espacial:</b> Suites de lujo con comodidades exclusivas, como bañeras de hidromasaje y
+    terrazas privadas con vista al espacio.
+    <br><br>
+    <b> Camarotes Virtuales 360°:</b> Camarotes con tecnología de realidad virtual que permiten a los
+    pasajeros sentir que están en diferentes lugares de la Vía Láctea sin salir de su habitación.
+    <br><br>
+    Recuerda que este es un escenario ficticio de cruceros por la Vía Láctea y que la realidad de los viajes
+    espaciales actuales está limitada a misiones dentro de nuestro sistema solar. Sin embargo, en el mundo
+    de la ciencia ficción y la imaginación, las posibilidades son infinitas para crear experiencias únicas
+    en el espacio profundo.
+    <br><br>
+    <h1>Reserva de Crucero Espacial</h1>
+<form action="procesar_reserva.php" method="post">
+<label for="tipo_camarote">Tipo de Camarote:</label>
+<select name="tipo_camarote" id="tipo_camarote">
+    <option value="ventana">Camarote con Ventana Panorámica</option>
+    <option value="tematico">Camarote Temático Planetario</option>
+    <option value="observacion">Camarote de Observación Estelar</option>
+    <option value="familiar">Camarote Familiar Espacial</option>
+    <option value="suite">Suite de Lujo Espacial</option>
+    <option value="virtual">Camarote Virtual 360°</option>
+</select>
+<br><br>
+<label for="clase">Clase de Viaje:</label>
+<select name="clase" id="clase">
+    <option value="turista">Turista</option>
+    <option value="experto">Experto</option>
+    <option value="elite">Elite</option>
+</select>
+<br><br>
+<label for="crucero">Selecciona tu Crucero Espacial:</label>
+<select name="crucero" id="crucero">
+    <option value="galactico">Crucero Galáctico</option>
+    <option value="estelar">Crucero Estelar</option>
+    <option value="intergalactico">Crucero Intergaláctico</option>
+    <option value="cosmico">Crucero Cósmico</option>
+</select>
+<br><br>
+<input type="submit" value="Reservar Ahora">
+</form>
+<h1>Formulario de Pago</h1>
+<form id="paymentForm" action="procesar_pago.php" method="post">
+<label for="monto">Monto a Pagar:</label>
+<input type="number" name="monto" id="monto" required>
+<label for="metodoPago">Seleccione el Método de Pago:</label>
+<select name="metodoPago" id="metodoPago" required>
+    <option value="tarjeta">Tarjeta de Crédito</option>
+    <option value="deposito">Depósito Bancario</option>
+    <option value="transferencia">Transferencia Bancaria</option>
+</select>
+<div id="tarjetaInfo" style="display: none;">
+    <h2>Detalles de la Tarjeta de Crédito:</h2>
+    <label for="numeroTarjeta">Número de Tarjeta:</label>
+    <input type="text" name="numeroTarjeta" id="numeroTarjeta" placeholder="1234 5678 9012 3456" maxlength="16">
+    <label for="nombreTitular">Nombre del Titular:</label>
+    <input type="text" name="nombreTitular" id="nombreTitular" required>
+    <label for="fechaVencimiento">Fecha de Vencimiento:</label>
+    <input type="text" name="fechaVencimiento" id="fechaVencimiento" placeholder="MM/AA" maxlength="5">
+    <label for="codigoSeguridad">Código de Seguridad:</label>
+    <input type="text" name="codigoSeguridad" id="codigoSeguridad" maxlength="3">
+</div>
+<div id="depositoInfo" style="display: none;">
+    <h2>Detalles de Depósito Bancario:</h2>
+    <label for="banco">Banco:</label>
+    <input type="text" name="banco" id="banco" required>
+    <label for="numeroCuenta">Número de Cuenta:</label>
+    <input type="text" name="numeroCuenta" id="numeroCuenta" required>
+</div>
+<div id="transferenciaInfo" style="display: none;">
+    <h2>Detalles de Transferencia Bancaria:</h2>
+    <label for="bancoDestino">Banco de Destino:</label>
+    <input type="text" name="bancoDestino" id="bancoDestino" required>
+    <label for="numeroCuentaDestino">Número de Cuenta de Destino:</label>
+    <input type="text" name="numeroCuentaDestino" id="numeroCuentaDestino" required>
+    <label for="montoTransferencia">Monto a Transferir:</label>
+    <input type="number" name="montoTransferencia" id="montoTransferencia" required>
+</div>
+<input type="submit" value="Pagar">
+</form>
+    </p>
+
+</main>
+
+
+
+
+
+
+
+<footer class="pie">
+    <h4>2023 Codo a Codo. Todos los derechos reservados. 😎
+    </h4>
+</footer>
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+    <title>Turista</title>
+
+</head background="https://upload.wikimedia.org/wikipedia/commons/4/4a/Solar_System_XXX.png">
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <h2>Formulario Turista</h2>
+            <nav>
+                <a href="index.html">Inicio |</a>
+                <a href="Itinerario.html">Itinerario |</a>
+                <a href="Historia.html">Historia |</a>
+                <a href="Tecnologia.html">Tecnologia |</a>
+                <a href="Naves.html">Naves |</a>
+                <a href="Turista.html">Turista |</a>
+                <a href="Legal.html">Legal |</a>
+                <a href="contacto.html">Contacto |</a>
+                <a href="ArmaTuViaje.html">Carrito |</a>
+
+            </nav>
+        </header>
+        <main class="contenido"
+            background="http://www.pptbackgrounds.net/uploads/the-starry-sky-backgrounds-wallpapers.jpg">
+            
+            <p> <h1>Formulario de Solicitud para Turista Espacial</h1>
+                <p>Por favor, complete el siguiente formulario para expresar su interés en convertirse en un turista espacial.</p>
+                
+                <form action="procesar_solicitud.php" method="POST">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                    
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required><br><br>
+                    
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" required><br><br>
+                    
+                    <label for="salud">¿Está en buena salud general?</label>
+                    <select id="salud" name="salud" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="movilidad">¿Tiene movilidad y flexibilidad adecuadas?</label>
+                    <select id="movilidad" name="movilidad" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="microgravedad">¿Es capaz de tolerar la microgravedad?</label>
+                    <select id="microgravedad" name="microgravedad" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="comunicacion">¿Tiene habilidades de comunicación efectiva?</label>
+                    <select id="comunicacion" name="comunicacion" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="estres">¿Es capaz de lidiar con situaciones de alta presión?</label>
+                    <select id="estres" name="estres" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="historial">¿Está dispuesto a proporcionar su historial médico?</label>
+                    <select id="historial" name="historial" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    
+                    <label for="capacitacion">¿Está dispuesto a recibir capacitación previa al vuelo?</label>
+                    <select id="capacitacion" name="capacitacion" required>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select><br><br>
+                    <label for="alergias">Alergias conocidas y reacciones adversas a medicamentos:</label><br>
+                    <textarea id="alergias" name="alergias" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <label for="condiciones_cardiovasculares">Condiciones cardiovasculares:</label><br>
+                    <textarea id="condiciones_cardiovasculares" name="condiciones_cardiovasculares" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <label for="presion_arterial">Presión arterial (si se conoce):</label>
+                    <input type="text" id="presion_arterial" name="presion_arterial"><br><br>
+                    
+                    <!-- Agrega más campos de evaluación médica -->
+                    
+                    <label for="historial_cirugias">Historial de cirugías anteriores y cicatrices:</label><br>
+                    <textarea id="historial_cirugias" name="historial_cirugias" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <label for="historial_traumatismos">Historial de traumatismos, fracturas o lesiones previas:</label><br>
+                    <textarea id="historial_traumatismos" name="historial_traumatismos" rows="4" cols="50" required></textarea><br><br>
+                    
+                    
+                    <label for="adjuntar_archivo">Adjuntar archivo (informe médico):</label>
+        <input type="file" id="adjuntar_archivo" name="adjuntar_archivo"><br><br>
+        
+        <input type="submit" value="Enviar Evaluación Médica">
+  
+                </form>
+
+
+                
+               
+
+           
+          
+
+            </p>
+        </main>
+        <aside class="sidebar">
+            <h3></h3>
+            <div class="container">
+                <aside class="sidebar">
+                    <h2></h2>
+                    <ul style="font-size: 35px;">
+                        <br>
+                         <li><a href="Mercurio.html" style="color: black;">Mercurio</a></li>
+                         <br>
+                         <li><a href="Venus.html" style="color: black;">Venus</a></li>
+                         <br>
+                         <li><a href="Tierra.html" style="color: black;">Tierra</a></li>
+                         <br>
+                         <li><a href="Luna.html" style="color: black;">Luna</a></li>
+                         <br>
+                         <li><a href="Marte.html" style="color: black;">Marte</a></li>
+                         <br>
+                         <li><a href="Jupiter.html" style="color: black;">Jupiter</a></li>
+                         <br>
+                         <li><a href="Saturno.html" style="color: black;">Saturno</a></li>
+                         <br>
+                         <li><a href="Urano.html" style="color: black;">Urano</a></li>
+                         <br>
+                         <li><a href="Neptuno.html" style="color: black;">Neptuno</a></li>
+ 
+ 
+ 
+                     </ul>
+                </aside>
+
+
+            </div>
+
+        </aside>
+        <div class="widget-1">
+            <h3>WIDGET-1</h3>
+
+        </div>
+        <div class="widget-2">
+            <iframe width="320" src="https://www.youtube.com/embed/c8tA2O8wQ40"
+                title="Cosmos - Ambient Space Music | Journey to the Infinite Universe" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+
+
+
+        <footer class="pie">
+            <h4>2023 Codo a Codo. Todos los derechos reservados. 😎
+
+            </h4>
+        </footer>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Imagenes/icono.ico" type="imagen/X-icon">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="encabezado">
+            <h2>Quiz</h2>
+            <nav>
+                <button><a href="index.html">Inicio</a></button>
+                <button><a href="Tecnologianaves.html">Tecnologia Y Naves</a></button>
+                <button><a href="Quiz.html">Quiz</a></button>
+                <button><a href="contacto.html">Contacto</a></button>
+                <button><a href="ArmaTuViaje.html">Arma tu viaje estelar🚀!</a></button>
+            </nav>
+        </header>
+    </div>
+
+    <div class="Trivia">
+        <h1>Quiz sobre Viajes Espaciales</h1>
+
+        <!-- Pregunta 1 -->
+        <p><strong>Pregunta 1:</strong> ¿Cuál es la agencia espacial más conocida a nivel mundial?</p>
+        <form id="question1">
+            <input type="radio" name="q1" value="a"> a) NASA<br>
+            <input type="radio" name="q1" value="b"> b) SpaceX<br>
+            <input type="radio" name="q1" value="c"> c) ESA<br>
+            <input type="radio" name="q1" value="d"> d) ROSCOSMOS<br>
+            <br>
+            <button type="button" onclick="checkAnswer(1)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 2 -->
+        <p><strong>Pregunta 2:</strong> ¿Cuál es el nombre del telescopio espacial lanzado en 1990 que ha capturado increíbles imágenes del espacio profundo?</p>
+        <form id="question2">
+            <input type="radio" name="q2" value="a"> a) Kepler<br>
+            <input type="radio" name="q2" value="b"> b) Hubble<br>
+            <input type="radio" name="q2" value="c"> c) James Webb<br>
+            <input type="radio" name="q2" value="d"> d) Spitzer<br>
+            <br>
+            <button type="button" onclick="checkAnswer(2)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 3 -->
+        <p><strong>Pregunta 3:</strong> ¿Cuál es el planeta más grande del sistema solar?</p>
+        <form id="question3">
+            <input type="radio" name="q3" value="a"> a) Marte<br>
+            <input type="radio" name="q3" value="b"> b) Tierra<br>
+            <input type="radio" name="q3" value="c"> c) Júpiter<br>
+            <input type="radio" name="q3" value="d"> d) Venus<br>
+            <br>
+            <button type="button" onclick="checkAnswer(3)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 4 -->
+        <p><strong>Pregunta 4:</strong> ¿Cuál es el nombre del primer ser humano en viajar al espacio?</p>
+        <form id="question4">
+            <input type="radio" name="q4" value="a"> a) Yuri Gagarin<br>
+            <input type="radio" name="q4" value="b"> b) Neil Armstrong<br>
+            <input type="radio" name="q4" value="c"> c) Buzz Aldrin<br>
+            <input type="radio" name="q4" value="d"> d) Valentina Tereshkova<br>
+            <br>
+            <button type="button" onclick="checkAnswer(4)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 5 -->
+        <p><strong>Pregunta 5:</strong> ¿Qué misión espacial llevó al primer ser humano a la Luna?</p>
+        <form id="question5">
+            <input type="radio" name="q5" value="a"> a) Apolo 11<br>
+            <input type="radio" name="q5" value="b"> b) Géminis 7<br>
+            <input type="radio" name="q5" value="c"> c) Apolo 13<br>
+            <input type="radio" name="q5" value="d"> d) Mercurio 9<br>
+            <br>
+            <button type="button" onclick="checkAnswer(5)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 6 -->
+        <p><strong>Pregunta 6:</strong> ¿Cuál es la temperatura aproximada en la superficie de Venus?</p>
+        <form id="question6">
+            <input type="radio" name="q6" value="a"> a) -20 grados Celsius<br>
+            <input type="radio" name="q6" value="b"> b) 125 grados Celsius<br>
+            <input type="radio" name="q6" value="c"> c) 45 grados Celsius<br>
+            <input type="radio" name="q6" value="d"> d) 75 grados Celsius<br>
+            <br>
+            <button type="button" onclick="checkAnswer(6)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 7 -->
+        <p><strong>Pregunta 7:</strong> ¿Qué científico propuso la teoría heliocéntrica, que afirmaba que la Tierra y otros planetas orbitan alrededor del Sol?</p>
+        <form id="question7">
+            <input type="radio" name="q7" value="a"> a) Galileo Galilei<br>
+            <input type="radio" name="q7" value="b"> b) Isaac Newton<br>
+            <input type="radio" name="q7" value="c"> c) Johannes Kepler<br>
+            <input type="radio" name="q7" value="d"> d) Nicolás Copérnico<br>
+            <br>
+            <button type="button" onclick="checkAnswer(7)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 8 -->
+        <p><strong>Pregunta 8:</strong> ¿Cuál es la luna más grande de Saturno?</p>
+        <form id="question8">
+            <input type="radio" name="q8" value="a"> a) Deimos<br>
+            <input type="radio" name="q8" value="b"> b) Titán<br>
+            <input type="radio" name="q8" value="c"> c) Europa<br>
+            <input type="radio" name="q8" value="d"> d) Ío<br>
+            <br>
+            <button type="button" onclick="checkAnswer(8)">Enviar</button>
+        </form>
+
+        <!-- Pregunta 9 -->
+        <p><strong>Pregunta 9:</strong> ¿Cuál es el planeta conocido como "el planeta rojo"?</p>
+        <form id="question9">
+            <input type="radio" name="q9" value="a"> a) Venus<br>
+            <input type="radio" name="q9" value="b"> b) Júpiter<br>
+            <input type="radio" name="q9" value="c"> c) Marte<br>
+            <input type="radio" name="q9" value="d"> d) Saturno<br>
+            <br>
+            <button type="button" onclick="checkAnswer(9)">Enviar</button>
+        </form>
+
+        <!-- Resultados -->
+        <div id="results" style="display: none;">
+            <h2>Resultados</h2>
+            <p>Tu puntuación: <span id="score">0</span> / 9</p>
+            <p>Respuestas correctas:</p>
+            <ul id="correctAnswers"></ul>
+        </div>
+
+        <script>
+            let score = 0;
+            let correctAnswers = [];
+
+            function checkAnswer(questionNumber) {
+                const formId = `question${questionNumber}`;
+                const selectedOption = document.querySelector(`#${formId} input:checked`);
+
+                if (selectedOption) {
+                    const selectedValue = selectedOption.value;
+
+                    if (questionNumber === 1 && selectedValue === "a") {
+                        score++;
+                        correctAnswers.push("Pregunta 1");
+                    }
+                    if (questionNumber === 2 && selectedValue === "b") {
+                        score++;
+                        correctAnswers.push("Pregunta 2");
+                    }
+                    if (questionNumber === 3 && selectedValue === "c") {
+                        score++;
+                        correctAnswers.push("Pregunta 3");
+                    }
+                    if (questionNumber === 4 && selectedValue === "a") {
+                        score++;
+                        correctAnswers.push("Pregunta 4");
+                    }
+                    if (questionNumber === 5 && selectedValue === "a") {
+                        score++;
+                        correctAnswers.push("Pregunta 5");
+                    }
+                    if (questionNumber === 6 && selectedValue === "b") {
+                        score++;
+                        correctAnswers.push("Pregunta 6");
+                    }
+                    if (questionNumber === 7 && selectedValue === "d") {
+                        score++;
+                        correctAnswers.push("Pregunta 7");
+                    }
+                    if (questionNumber === 8 && selectedValue === "b") {
+                        score++;
+                        correctAnswers.push("Pregunta 8");
+                    }
+                    if (questionNumber === 9 && selectedValue === "c") {
+                        score++;
+                        correctAnswers.push("Pregunta 9");
+                    }
+
+                    selectedOption.checked = false;
+                }
+
+                if (questionNumber < 9) {
+                    document.querySelector(`#question${questionNumber}`).style.display = "none";
+                    document.querySelector(`#question${questionNumber + 1}`).style display = "block";
+                } else {
+                    showResults();
+                }
+            }
+
+            function showResults() {
+                document.querySelector("#results").style.display = "block";
+                document.querySelector("#score").textContent = score;
+                const correctAnswersList = document.querySelector("#correctAnswers");
+                correctAnswers.forEach(answer => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = answer;
+                    correctAnswersList.appendChild(listItem);
+                });
+            }
+        </script>
+    </div>
+
+    <footer class="pie">
+        <h4>2023 Codo a Codo. Todos los derechos reservados. 😎</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,327 @@
+/* Estilo espacial nocturno */
+body {
+    background-color: #0a0a0a; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+.titulo {
+    font-size: 28px; /* Tamaño del texto del título */
+    margin: 0; /* Elimina el margen predeterminado del encabezado */
+}
+/* Cambiar el color del enlace no visitado */
+a {
+    color: #59a4f5;
+}
+
+/* Cambiar el color del enlace visitado */
+a:visited {
+    color: #fafafa;
+}
+
+/* Cambiar el color del botón */
+.mi-boton {
+    background-color: #007bff;
+    color: white;
+    border: 2px solid #007bff; /* Borde del botón */
+}
+
+.mi-boton:hover {
+    background-color: #0056b3;
+    border: 2px solid #0056b3; /* Cambiar el color del borde al pasar el mouse */
+}
+
+/* Cambiar el color del encabezado y la fuente */
+
+
+/* Estilos para el menú hamburguesa */
+.menu-hamburguesa .barra {
+    background-color: #ffffff; /* Color de las barras del icono */
+}
+
+.menu {
+    background-color: #333;
+}
+
+.menu a {
+    color: white;
+}
+
+/* Estilos para el formulario */
+form {
+    background-color: #333;
+    border: 1px solid #007bff; /* Borde del formulario */
+}
+
+label {
+    color: white;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+    background-color: #1c1c1c; /* Fondo del campo de entrada */
+    color: #ffffff; /* Texto dentro del campo */
+    border: 1px solid #007bff; /* Borde del campo de entrada */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border: 1px solid #0056b3; /* Cambiar el color del borde al enfocar */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la galería flotante */
+.galeriaflotante {
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+.galeriaflotante img {
+    max-width: 500px; /* Ajusta el tamaño máximo de la imagen a 500px */
+    display: block; /* Elimina el espacio en blanco debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.texto {
+    background-color: #333;
+}
+
+/* Estilos para el pie de página */
+.pie-pagina {
+    background-color: #0a0a0a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos para el botón hamburguesa */
+.boton-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Para superponer el botón sobre el contenido */
+}
+
+.barra {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Estilos para el menú desplegable */
+.menu {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 1; /* Para superponer el menú sobre el contenido */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    padding: 15px;
+    text-align: center;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilos para mostrar el menú */
+.mostrar-menu .menu {
+    left: 0;
+}
+
+/* Estilo para el panel de historia */
+.historia {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    color: white; /* Color de texto blanco */
+    padding: 20px;
+}
+
+/* Estilo para el panel de itinerario */
+.itinerario {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    color: white; /* Color de texto blanco */
+    padding: 20px;
+}
+
+/* Estilo para el panel de servicios */
+.ser {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    color: white; /* Color de texto blanco */
+    padding: 20px;
+}
+
+/* Estilo para el pie de página */
+.pie {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente negro */
+    color: white; /* Color de texto blanco */
+    padding: 10px;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-hamburguesa {
+    /* Estilos para el menú hamburguesa */
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bienvenida,
+.historia,
+.itinerario,
+.ser,
+.galeriaflotante {
+    width: 100%;
+    max-width: 800px; /* Ancho máximo para el contenido */
+    padding: 20px;
+    margin: 10px;
+    background-color: #f9f9f9; /* Cambia el color de fondo según tus preferencias */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.pie {
+    text-align: center;
+    background-color: #333; /* Cambia el color de fondo según tus preferencias */
+    color: #fff;
+    padding: 10px;
+}
+
+/* Estilos base que se aplicarán a todas las pantallas */
+.contenedor {
+    display: grid;
+    grid-template-columns: 4fr; /* Un solo columna */
+    grid-template-rows: auto auto auto; /* Tres filas autoajustables */
+    grid-gap: 20px; /* Espacio entre las filas y columnas del grid */
+    justify-items: center; /* Centra los elementos horizontalmente en el grid */
+}
+
+/* Diseño para pantallas más pequeñas (móviles) */
+@media screen and (max-width: 768px) {
+    .bienvenida,
+    .historia,
+    .itinerario,
+    .ser,
+    .galeriaflotante {
+        max-width: 95%; /* Reducir el ancho máximo para pantallas más pequeñas */
+    }
+}
+
+/* Diseño para pantallas medianas (tabletas) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contenido {
+        flex-direction: row;
+    }
+
+    .menu-hamburguesa {
+        display: none; /* Ocultar el menú hamburguesa en pantallas medianas */
+    }
+
+    .bienvenida,
+    .historia,
+    .itinerario,
+    .ser,
+    .galeriaflotante {
+        max-width: 400px; /* Ancho máximo para el contenido en tabletas */
+    }
+}
+
+nav {
+    background-color: #222; /* Fondo oscuro para la barra de navegación */
+    padding: 10px;
+    text-align: center;
+    
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #333; /* Fondo oscuro para los botones */
+    color: #fff; /* Texto blanco en los botones */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #444; /* Color de fondo más claro al pasar el cursor sobre los botones */
+}
+/* Estilos para el encabezado */
+.encabezado {
+    background-color: #111111; /* Fondo oscuro para el encabezado */
+    color: #3c4ee9; /* Texto blanco en el encabezado */
+    padding: 20px; /* Espaciado interno en el encabezado */
+    text-align: center;
+    position: fixed; /* Fija el encabezado en la parte superior */
+    width: 100%; /* Ancho completo del encabezado */
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+
+
+
+.contenido h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.contenido p {
+    font-size: 16px;
+    text-align: left;
+}
